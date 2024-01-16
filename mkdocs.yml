@@ -7,14 +7,16 @@ nav:
       - How to Use : "2.DesignOptions/1.howtouse.md"
       - Parameter : "2.DesignOptions/2.parameters.md"
       - Prompt  : "2.DesignOptions/3.prompt.md"
-  - 3.재료 및 텍스쳐 선택 (LoRA): "a3_massing.md"
-  - 4.주변 환경 적용 (Control-net) : "a4_forming.md"
-  - 5.개념 시각화 및 도면 작업: "about.md"
+  - 3.재료 및 텍스쳐 선택 (LoRA): 
+      - Texture : "3.texture/texture.md"
+      - LoRA : "3.texture/LoRA.md"
+  - 4.주변 환경 적용(Control-net) : 
+      - Control_net : "4.Control_net/Control_net_models.md"
+  - 5.개념 시각화 및 도면 작업:
+      - Visualization : "5.Visualization/visualization.md"
   - 6.Generative 3D:
-      - Scripts: "index/scripts.md"
-      - Figures: "index/figures.md"
-      - Presentations: "index/presentations.md"
-      - Bibliography: "index/bibliography.md"
+      - Gen 3d: "6.Gen 3D modeling/gen3d.md"
+
   - Documenting (TBR):
       - Instructions: "documenting/instructions.md"
       - Folder Structure: "documenting/folder_structure.md"
@@ -26,8 +28,9 @@ theme:
   favicon: "favicon.ico"
   palette:
     primary: "green"  # Escaping hex code
-    accent: "\"#4f7c55\""
-
+    accent: "dark green"
+extra_css:
+  - css/custom.css
 markdown_extensions:
   - codehilite
   - pymdownx.keys
