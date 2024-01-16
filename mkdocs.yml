@@ -2,7 +2,7 @@ site_name: Stable diffusion for Architects [KR]
 
 nav:
   - 1.시작(생성형 AI): "index.md"
-  - 2.설치(stable diffusion): "a1_planning.md"
+  - 2.설치(stable diffusion): "install.md"
   - 2.디자인 옵션 탐색(Prompt): 
       - How to Use : "2.DesignOptions/1.howtouse.md"
       - Parameter : "2.DesignOptions/2.parameters.md"
