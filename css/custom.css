@@ -1,0 +1,4 @@
+.md-typeset .md-content__inner {
+    white-space: pre-wrap !important;
+    background-color: #ffddcc !important; /* 밝은 분홍색 배경으로 설정 */
+}
