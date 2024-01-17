@@ -29,7 +29,7 @@
 <br>Git과 Python의 설치 순서는 상관없으나 파이썬을 설치시에 **Add Python 3.10 to PATH란을 체크** ✅ 해주셔야합니다. 
 
 <p align="center">
-  <img src="../img/image6.PNG" alt="Generative AI in Architecture">
+  <img src="../../img/image6.PNG" alt="Generative AI in Architecture">
 </p>
 ----
 
@@ -39,7 +39,7 @@ JL_StableDiffusion_v1.0.zip을 압축해제 하신후 압축해제한 폴더에 
 해당 프로그램은 stable diffusion에 요구되는 건축 특화 체크포인트와 stable diffusion webui 번역본이 함께 들어있고 이를 자동적으로 로드해줍니다 (2.8gb).  설치는 약 5~10분 정도 소요됩니다.
 
 <p align="center">
-  <img src="../img/image7.PNG" alt="Generative AI in Architecture">
+  <img src="../../img/image7.PNG" alt="Generative AI in Architecture">
 </p>
  ----
 
@@ -47,7 +47,7 @@ JL_StableDiffusion_v1.0.zip을 압축해제 하신후 압축해제한 폴더에 
 설치가 성공적으로 완료되면 Running on local URL: <u>**http://127.0.0.1:7860**</u>이 출력되며 프로그램이 작동 준비에 들어간 것을 알 수 있습니다
 
 <p align="center">
-  <img src="../img/image8.PNG" alt="Generative AI in Architecture">
+  <img src="../../img/image8.PNG" alt="Generative AI in Architecture">
 </p>
 ----
 
@@ -56,7 +56,7 @@ JL_StableDiffusion_v1.0.zip을 압축해제 하신후 압축해제한 폴더에 
 웹브라우저에 **http://localhost:7860** 혹은 **http://127.0.0.1:7860** 을 입력하여 webui를 실행시켜줍니다. 
 
 <p align="center">
-  <img src="../img/image9.PNG" alt="Generative AI in Architecture">
+  <img src="../../img/image9.PNG" alt="Generative AI in Architecture">
 </p>
 
 ----
