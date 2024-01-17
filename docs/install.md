@@ -1,7 +1,7 @@
 # Stable diffusion Webui 설치 방법
 ----
 <p align="center">
-  <a href="../img/JL_stablediffusion.zip" download style="
+  <a href="https://huggingface.co/SKyu/JL_architecture/resolve/main/SD_Arc.zip" download style="
       display: inline-block;
       padding: 12px 24px;
       margin: 4px 2px;
