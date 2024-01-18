@@ -2,7 +2,7 @@ site_name: Stable diffusion for Architects [KR]
 
 nav:
   - 1.시작(생성형 AI): 
-      - Gen AI : "1.Intro/index.md"
+      - Gen AI : "1.Intro/intro.md"
   - 2.설치(stable diffusion): 
       - Install : "2.install/install.md"
   - 3.디자인 옵션 탐색(Prompt): 
