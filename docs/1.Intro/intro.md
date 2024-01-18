@@ -11,7 +11,7 @@
 <br>AI에 대한 일반적인 논의와 함께, 건축과 디자인에 특히 중요한 부분들을 간단하고 명확하게 설명하려고 합니다. 이를 위해 머신러닝, 딥러닝, 확산 알고리즘 등 AI의 핵심 개념들을 쉽게 살펴볼 것입니다.</p>
 ----
 <p align="center">
-  <img src="../../img/image2.png" alt="Generative AI in Architecture">
+  <img src="../../docs/img/image2.png" alt="Generative AI in Architecture">
 </p>
 ----
 **1. 인공지능**:
@@ -50,7 +50,7 @@
 
 컴퓨테이셔널 디자인은 다양한 방법으로 활용되며, AI는 그 중 하나의 방법으로 건축 분야에 적용될 수 있습니다. AI는 설계 최적화, 자동화, 시뮬레이션, 파라매트릭 디자인 제안 등을 통해 복잡한 문제 해결에 기여하고, 더 효율적이고 지속 가능한 건축물 설계에 도움을 줍니다<br>
 <p align="center">
-  <img src="../../img/image13.PNG" alt="Generative AI in Architecture">
+  <img src="../img/image13.PNG" alt="Generative AI in Architecture">
 </p>
 
 - **파라메트릭 디자인**: <br>AI는 고객의 요구 사항과 선호를 분석하여 개인화된 디자인 솔루션을 제공할 수 있습니다. 전통적인 설계 방식을 넘어서는 창의적이고 혁신적인 디자인을 가능하게 합니다.
