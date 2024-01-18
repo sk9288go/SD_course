@@ -29,7 +29,7 @@
   <br><br> 딥러닝은 인간의 두뇌가 작동하는 구조를 본떠 만든 인공신경망의 새로운 이름입니다. 마치 무수히 많은 다이얼을 가진 기계로 비유할 수 있습니다. </P>
   
   <p align="center">
-  <img src="../../img/image5.png" alt="Generative AI in Architecture">
+  <img src="img/image5.png" alt="Generative AI in Architecture">
 </p>
 
   <div style="margin-left: 20px;">
