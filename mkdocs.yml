@@ -1,13 +1,15 @@
 site_name: Stable diffusion for Architects [KR]
 
 nav:
+  - 0.Home: "index.md"
   - 1.시작(생성형 AI): 
-      - Gen AI : "1.Intro/intro.md"
+      - What is Gen AI? : "1.Intro/intro.md"
+      - What is Stable diffusion? : "1.Intro/stablediff.md"
   - 2.설치(stable diffusion): 
       - Install : "2.install/install.md"
   - 3.디자인 옵션 탐색(Prompt): 
-      - How to Use : "3.DesignOptions/1.howtouse.md"
-      - Parameter : "3.DesignOptions/2.parameters.md"
+      - Webui 기본 인터페이스 : "3.DesignOptions/interface.md"
+      - Parameter : "3.DesignOptions/howtouse.md"
       - Prompt  : "3.DesignOptions/3.prompt.md"
   - 4.재료 및 텍스쳐 선택 (LoRA): 
       - Texture : "4.texture/texture.md"

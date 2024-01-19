@@ -1,4 +1,6 @@
 # Stable diffusion Webui 설치 방법
+
+<p>설치에 관한 내용입니다. <br>밑의 버튼을 클릭하시면 로컬에서 설치에 필요한 zip 파일이 다운로드 됩니다.</p>
 ----
 <p align="center">
   <a href="https://huggingface.co/SKyu/JL_architecture/resolve/main/SD_Arc.zip" download style="
@@ -51,7 +53,7 @@ JL_StableDiffusion_v1.0.zip을 압축해제 하신후 압축해제한 폴더에 
 </p>
 ----
 
-### **4.웹 브라우저에서 실행** 
+<span style="color: white; background-color: green;"><b>웹 브라우저에서 실행</b></span>
 
 웹브라우저에 **http://localhost:7860** 혹은 **http://127.0.0.1:7860** 을 입력하여 webui를 실행시켜줍니다. 
 
