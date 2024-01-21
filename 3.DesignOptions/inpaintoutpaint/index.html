@@ -1,0 +1,1173 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../img%20to%20img/">
+      
+      
+        <link rel="next" href="../../4.texture/texture/">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+    
+    
+      
+        <title>inpaint-outpaint - Stable diffusion for Architects [KR]</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="dark-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-setting" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Stable diffusion for Architects [KR]" class="md-header__button md-logo" aria-label="Stable diffusion for Architects [KR]" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Stable diffusion for Architects [KR]
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              inpaint-outpaint
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Stable diffusion for Architects [KR]" class="md-nav__button md-logo" aria-label="Stable diffusion for Architects [KR]" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    Stable diffusion for Architects [KR]
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    1.시작(생성형 AI)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            1.시작(생성형 AI)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.Intro/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What is Gen AI?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.Intro/stablediff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What is Stable diffusion?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    2.설치(stable diffusion)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            2.설치(stable diffusion)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2.install/install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Install
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    3.디자인 옵션 탐색(Prompt)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            3.디자인 옵션 탐색(Prompt)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Webui 기본 인터페이스
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howtouse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.prompt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prompt
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../txt%20to%20img/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    txt to image
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../img%20to%20img/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    image to image
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    inpaint-outpaint
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    4.재료 및 텍스쳐 선택 (LoRA)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            4.재료 및 텍스쳐 선택 (LoRA)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4.texture/texture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Texture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4.texture/LoRA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LoRA
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4.texture/HowtoLoRA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to LoRA
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    5.주변 환경 적용(Control-net)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            5.주변 환경 적용(Control-net)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5.Control_net/Control_net_basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Control_net
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5.Control_net/Control_net_models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Control_net_models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    6.개념 시각화 및 도면 작업
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            6.개념 시각화 및 도면 작업
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6.Visualization/visualization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visualization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    7.Generative 3D
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            7.Generative 3D
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7.Gen%203D%20modeling/gen3d/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gen 3d
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Documenting (TBR)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Documenting (TBR)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documenting/instructions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instructions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documenting/folder_structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Folder Structure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documenting/guidelines/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guidelines
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<p>번 게시글에서는 지난번 설명드린 ControlNet에 이어 Inpaint 기능에 대해 설명드리고자 합니다.</p>
+<p align="center">
+  <img src="../../img/inpaint1.jpg" alt="Generative AI in Architecture">
+</p>
+
+<p>(Source : https://twitter.com/huggingface/status/1582794699970347009/photo/1)</p>
+<p>위 사진의 좌측을 보시면, 사자의 얼굴이 색칠되어 있고, 명령 프롬프트에는 'gorilla'라고 입력되어 있습니다.</p>
+<p>그리고 그 결과로 색칠되어 있던 부분에는 우측과 같이 고릴라의 얼굴로 바뀐 사자 이미지가 생성됩니다.</p>
+<p>이렇듯 Inpaint 기능은 원하는 영역을 Mask하고 그 영역을 새로 입력한 프롬프트로써 변경시켜주는 기능입니다.</p>
+<p>이러한 기능을 건축디자인에 활용한다면 빠르고 간편한 이미지 생성을 통해 다양한 시도를 해보실 수 있을 것 같습니다.</p>
+<p>그 예시를 들자면, 특정 사이트에 건물을 지어 볼 수도 있을 것이고,</p>
+<p align="center">
+  <img src="../../img/inpaint2.jpg" alt="Generative AI in Architecture">
+</p>
+
+<p>기존 건물의 리모델링을 해보실 수도 있을 것입니다. (형상을 보존하는 것은 ControlNet을 활용하시면 됩니다.)</p>
+<p align="center">
+  <img src="../../img/inpaint3.jpg" alt="Generative AI in Architecture">
+</p>
+
+<p>또한 기존 건축물은 없애고 재건축을 할수도 있을 것이고,</p>
+<p align="center">
+  <img src="../../img/inpaint4.jpg" alt="Generative AI in Architecture">
+</p>
+
+<p>Stable Diffusion의 빠른 이미지 생성을 활용해 디자인 초기단계에서의 매스스터디 역시 간편할 것입니다.</p>
+<p>(아래 이미지들은 약 1시간에 걸쳐 자동으로 생성된 100개의 이미지 중 60개의 예시이미지입니다.)</p>
+<p align="center">
+  <img src="../../img/inpaint5.png" alt="Generative AI in Architecture">
+</p>
+<p align="center">
+  <img src="../../img/inpaint6.png" alt="Generative AI in Architecture">
+</p>
+
+<p>Rectangular tall office architecture, bright sunlight casting shadows on the structures, photorealistic architectural rendering in digital painting, neutral colors with splashes of vibrant accents, created using Vray, high-quality 8K UHD resolution.
+Negative prompt: Ugly, poorly drawn perspective, out of frame, watermark, signature, low contrast, underexposed, overexposed, amateur, distorted proportions, blurry, grainy.
+Steps: 50, Sampler: Euler a, CFG scale: 7, Seed: -1, Size: 768x512, Model hash: 1ecb6b4e9c, Model: jl_model, Denoising strength: 0.9, Mask blur: 4</p>
+<p>이러한 Inpaint 기능을 활용하기 위해서 중점적으로 다루어야 할 요소(Factor)는 아래와 같습니다.</p>
+<p>1) Mask blur &amp; Only masked padding, pixels</p>
+<p>2) Mask mode</p>
+<p>3) Denoising Strength</p>
+<p>또한 Inpaint는 Img2Img에 기반한 특수기능으로, Img2Img의 기본 설정값은</p>
+<p>'[Stable Diffusion] Image to Image' 게시글에서 설명드린 바와 같습니다.</p>
+<p>(Reference : https://jis.junglim.com/app/board/270/post/14377)</p>
+<p>1) Prompt (Positive Prompt / Negative Prompt)</p>
+<p>2) Image</p>
+<p>3) Sampling Methods</p>
+<p>4) Sampling Steps</p>
+<p>5) Size (가로, 세로)</p>
+<p>6) Batch</p>
+<p>7) CFG Scale</p>
+<p>8) Seed</p>
+<p>그리고 위에 언급되지 않은 요소들은 기본값을 그대로 활용하시면 됩니다.</p>
+<h1 id="1-setting">1 Setting</h1>
+<p align="center">
+  <img src="../../img/inpaint7.jpg" alt="Generative AI in Architecture">
+</p>
+
+<p>해당 게시글에서 예시로 보여드린 이미지의 세팅값을 아래와 같이 예시로 보여드리며,</p>
+<p>실습하실때 참고해주시면 감사드리겠습니다.</p>
+<ol>
+<li>Mask blur &amp; Only masked padding, pixels</li>
+</ol>
+<p align="center">
+  <img src="../../img/inpaint8.gif" alt="Generative AI in Architecture">
+</p>
+
+<p>우선, Inpaint 기능을 위해서는 바꾸고자 하는 특정부분을 색칠하여야 합니다. 그 과정은 아래 GIF와 같습니다.</p>
+<p align="center">
+  <img src="../../img/inpaint8.jpg" alt="Generative AI in Architecture">
+</p>
+
+<p>그리고 Mask blur값과 Padding값을 입력해야하는데, Adobe Photoshop에서 Mask 기능과 Feahter 기능을 다루어보신 분이라면 해당 요소가 쉽게 이해가 되실겁니다.</p>
+<p>Photoshop에서는 아래 오리이미지와 같이 Feather값이 높을수록 경계가 흐려지는데요,</p>
+<p>Inpaint기능에서의 Mask blur 및 Padding값도 Feather와 마찬가지로 높아질수록 경계를 흐리게 해주며,</p>
+<p>이미지의 경계가 뚜렷하거나 너무 높아질 경우 부자연스러운 합성이미지가 생성됩니다.</p>
+<p>따라서 경계가 뚜렷할 경우에는 Mask blur 및 Padding값을 높여주시고,</p>
+<p>아래 이미지와 같이 경계가 너무 흐려 기존이미지가 겹쳐보인다면 그 값을 낮춰주세요.</p>
+<ol>
+<li>Mask mode</li>
+</ol>
+<p align="center">
+  <img src="../../img/inpaint9.jpg" alt="Generative AI in Architecture">
+</p>
+
+<p>Mask mode에는 색칠한 영역만 변경할 것인지, 그 외에 영역만 변경할 것인지 선택이 가능합니다.</p>
+<p>그에 따른 결과는 아래 이미지와 같습니다.</p>
+<p>이때 Inpaint 기능은 ControlNet 기능과 동시에 활용할수도 있으며, 이를 활용해서 주변 컨텍스트 요소를 남길 수 있습니다.</p>
+<p>(ControlNet에 관한 설명과 설치안내는 http://jis.junglim.com/app/board/270/post/14403를 참고해주세요)</p>
+<ol>
+<li>Denoising Strength</li>
+</ol>
+<p align="center">
+  <img src="../../img/inpaint10.jpg" alt="Generative AI in Architecture">
+</p>
+
+<p>Denoising Strength는 원본 이미지를 얼마나 변경할 것인지에 대한 설정값으로,</p>
+<p>0을 입력할 경우 이미지가 변경되지 않으며,</p>
+<p>최대값인 1을 입력할 경우 Mask된 영역과 전혀 상관없는 이미지가 생성됩니다.</p>
+<p>추가로 Inpaint 기능은 Mask 영역뿐만 아니라 주변 환경도 인식하여 구도와 스케일을 반영하여 이미지가 생성됩니다.</p>
+<p>그에 따른 이미지 생성결과는 아래와 같습니다.</p>
+<ol>
+<li>마치며</li>
+</ol>
+<p>지금까지 Txt2Img, Img2Img와 같은 전반적인 기능과</p>
+<p>ControlNet, Inpaint와 같은 특수기능들을 알려드렸습니다.</p>
+<p>이것으로 Stable Diffusion의 설명을 마치며,</p>
+<p>차후 업데이트가 있을 경우 다시 Stable Diffusion 글로 돌아오겠습니다!</p>
+<p>지금까지 많은 관심 가져주신 모든 분들께 감사드립니다! </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      
+    
+  </body>
+</html>
