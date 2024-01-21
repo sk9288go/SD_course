@@ -1,7 +1,5 @@
 # **건축가들을 위한 생성형 AI - Intro**
 
-
-
 <p align="center">
   <img src="img/image_gpt.gif" alt="Generative AI in Architecture" width="800px">
 </p>
@@ -83,3 +81,5 @@ ikea의 creative lab인 Space10의 AI에 대한 영상입니다.
 </div>
 
 강의의 기본 소개 자료입니다. 왼쪽의 메뉴에서 원하는 내용을 클릭해주세요.
+
+https://www.internetmap.kr/entry/Basic-Theory-of-Stable-Diffusion
