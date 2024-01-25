@@ -45,7 +45,7 @@ Stable Diffusion은 지속적으로 발전하고 있으며, 커뮤니티에 의�
 1. **txt2img** (텍스트로 이미지 생성)<br>
 
 <p align="center">
-  <img src="../../img/txt2img.PNG" alt="Generative AI in Architecture" width="500px">
+  <img src="../../img/txt2img.png" alt="Generative AI in Architecture" width="500px">
 </p>
 
 txt2img는 사용자가 입력한 프롬프트에 따라 관련 이미지를 생성해주는 핵심 기능입니다. 
@@ -54,7 +54,7 @@ txt2img는 사용자가 입력한 프롬프트에 따라 관련 이미지를 생
 
 2. **img2img** (이미지로 이미지 생성)<br>
 <p align="center">
-  <img src="../../img/img2img_!.PNG" alt="Generative AI in Architecture" width="500px">
+  <img src="../../img/img2img_!.png" alt="Generative AI in Architecture" width="500px">
 </p>
 
 img2img 기능은 원본 이미지에 스타일 이미지, 텍스트를 적용하여 새로운 이미지를 생성합니다. 
@@ -64,7 +64,7 @@ img2img 기능은 원본 이미지에 스타일 이미지, 텍스트를 적용�
 3. **inpaint/outpaint** (이미지 복원 및 변경)<br>
 
 <p align="center">
-  <img src="../../img/inpaint_1.PNG" alt="Generative AI in Architecture" width="500px">
+  <img src="../../img/inpaint_1.png" alt="Generative AI in Architecture" width="500px">
 </p>
 
 inpaint 기능은 이미지의 변경이 필요한 구역을 지정하여 AI가 해당 구역의 이미지를 생성합니다. 
