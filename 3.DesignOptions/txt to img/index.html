@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../3.prompt/">
+        <link rel="prev" href="../howtouse/">
       
       
         <link rel="next" href="../img%20to%20img/">
@@ -20,7 +20,7 @@
     
     
       
-        <title>txt to image - Stable diffusion for Architects [KR]</title>
+        <title>3-2 txt to image - Stable diffusion for Architects [KR]</title>
       
     
     
@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#1-prompt" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -102,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              txt to image
+              3-2 txt to image
             
           </span>
         </div>
@@ -255,7 +260,7 @@
         
   
   <span class="md-ellipsis">
-    What is Gen AI?
+    1-1 AI?
   </span>
   
 
@@ -276,7 +281,7 @@
         
   
   <span class="md-ellipsis">
-    What is Stable diffusion?
+    1-2 Stable diffusion?
   </span>
   
 
@@ -341,7 +346,7 @@
         
   
   <span class="md-ellipsis">
-    Install
+    2-1 로컬 설치 방법
   </span>
   
 
@@ -383,7 +388,7 @@
             
   
   <span class="md-ellipsis">
-    3.디자인 옵션 탐색(Prompt)
+    3.디자인 옵션 탐색
   </span>
   
 
@@ -393,30 +398,9 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            3.디자인 옵션 탐색(Prompt)
+            3.디자인 옵션 탐색
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../interface/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Webui 기본 인터페이스
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -429,28 +413,7 @@
         
   
   <span class="md-ellipsis">
-    Parameter
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../3.prompt/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Prompt
+    3-1 기본 기능
   </span>
   
 
@@ -474,15 +437,256 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    3-2 txt to image
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    txt to image
+    3-2 txt to image
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Prompt
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Prompt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-1-positive-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      1-1. Positive Prompt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-2-negative-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      1-2. Negative Prompt
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-sampling-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Sampling Method
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Sampling Method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-1-sampling-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      2-1. Sampling Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2-2. 샘플러의 영향
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-sampling-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Sampling Steps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Sampling Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3-1-sampling-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      3-1 Sampling Steps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Size
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Size">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-1-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      4-1 Size
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      4-2 크기 증가의 영향
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-batch" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Batch
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Batch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      5-1 배치 수
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      5-2 배치 크기
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-cfg-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. CFG Scale
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. CFG Scale">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#6-1-cfg-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      6-1 CFG Scale
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-seed" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Seed
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Seed">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7-1-seed" class="md-nav__link">
+    <span class="md-ellipsis">
+      7-1 Seed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-1-change-with-same-seed" class="md-nav__link">
+    <span class="md-ellipsis">
+      7-1 change with same seed
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -500,7 +704,7 @@
         
   
   <span class="md-ellipsis">
-    image to image
+    3-3 img to image
   </span>
   
 
@@ -521,7 +725,7 @@
         
   
   <span class="md-ellipsis">
-    inpaint-outpaint
+    3-4 inpaint
   </span>
   
 
@@ -561,7 +765,7 @@
             
   
   <span class="md-ellipsis">
-    4.재료 및 텍스쳐 선택 (LoRA)
+    4.프롬프트 엔지니어링
   </span>
   
 
@@ -571,7 +775,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            4.재료 및 텍스쳐 선택 (LoRA)
+            4.프롬프트 엔지니어링
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -582,53 +786,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../4.texture/texture/" class="md-nav__link">
+      <a href="../3.prompt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Texture
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../4.texture/LoRA/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    LoRA
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../4.texture/HowtoLoRA/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    How to LoRA
+    4-1 Prompt
   </span>
   
 
@@ -668,7 +830,7 @@
             
   
   <span class="md-ellipsis">
-    5.주변 환경 적용(Control-net)
+    5.재료 및 텍스쳐 선택 (LoRA)
   </span>
   
 
@@ -678,7 +840,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            5.주변 환경 적용(Control-net)
+            5.재료 및 텍스쳐 선택 (LoRA)
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -689,11 +851,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../5.Control_net/Control_net_basics/" class="md-nav__link">
+      <a href="../../4.texture/LoRA/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Control_net
+    5-1 LoRA
   </span>
   
 
@@ -710,11 +872,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../5.Control_net/Control_net_models/" class="md-nav__link">
+      <a href="../../4.texture/HowtoLoRA/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Control_net_models
+    5-2 How to LoRA
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4.texture/texture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5-3 Texture
   </span>
   
 
@@ -754,7 +937,7 @@
             
   
   <span class="md-ellipsis">
-    6.개념 시각화 및 도면 작업
+    6.주변 환경 적용(Control-net)
   </span>
   
 
@@ -764,7 +947,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            6.개념 시각화 및 도면 작업
+            6.주변 환경 적용(Control-net)
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -775,11 +958,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../6.Visualization/visualization/" class="md-nav__link">
+      <a href="../../5.Control_net/Control_net_basics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Visualization
+    6-1 Control_net
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5.Control_net/Control_net_models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6-2 Control_net_models
   </span>
   
 
@@ -819,7 +1023,7 @@
             
   
   <span class="md-ellipsis">
-    7.Generative 3D
+    7.개념 시각화 및 도면 작업
   </span>
   
 
@@ -829,7 +1033,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
-            7.Generative 3D
+            7.개념 시각화 및 도면 작업
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -840,11 +1044,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../7.Gen%203D%20modeling/gen3d/" class="md-nav__link">
+      <a href="../../6.Visualization/visualization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Gen 3d
+    7-1 Visualization
   </span>
   
 
@@ -884,7 +1088,7 @@
             
   
   <span class="md-ellipsis">
-    Documenting (TBR)
+    8.Generative 3D
   </span>
   
 
@@ -893,6 +1097,71 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            8.Generative 3D
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7.Gen%203D%20modeling/gen3d/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8-1 Gen 3d
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Documenting (TBR)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             Documenting (TBR)
           </label>
@@ -986,6 +1255,227 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Prompt
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Prompt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-1-positive-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      1-1. Positive Prompt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-2-negative-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      1-2. Negative Prompt
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-sampling-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Sampling Method
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Sampling Method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-1-sampling-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      2-1. Sampling Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2-2. 샘플러의 영향
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-sampling-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Sampling Steps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Sampling Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3-1-sampling-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      3-1 Sampling Steps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Size
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Size">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-1-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      4-1 Size
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      4-2 크기 증가의 영향
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-batch" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Batch
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Batch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      5-1 배치 수
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      5-2 배치 크기
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-cfg-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. CFG Scale
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. CFG Scale">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#6-1-cfg-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      6-1 CFG Scale
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-seed" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Seed
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Seed">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7-1-seed" class="md-nav__link">
+    <span class="md-ellipsis">
+      7-1 Seed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-1-change-with-same-seed" class="md-nav__link">
+    <span class="md-ellipsis">
+      7-1 change with same seed
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -999,98 +1489,122 @@
                   
 
 
-  <h1>txt to image</h1>
+  <h1>3-2 txt to image</h1>
 
-<p>Text를 활용하여 Image를 생성하는 'Text to Image(Txt2img)'에 대한 소개를 하고자 합니다.
-우선 Stable Diffusion에서는 Check Point(Ckpt)라고 해서 수만장의 건축이미지를 학습시킨 모델이 있으며, 해당 모델에 학습된 이미지를 토대로 이미지를 생성(Txt2img)하거나 변환(Img2img)할수도 있습니다.</p>
+<hr />
+<p><strong>Text to Image (Txt2img)</strong> 텍스트 설명을 바탕으로 이미지를 생성하는 방식입니다.</p>
+<p>Stable Diffusion은 대량의 이미지 데이터를 학습하여 구축된 모델을 사용합니다. </p>
+<p>모델들은 '레시피'와 유사한 역할을 하며, </p>
+<p>사용자가 제공하는 텍스트 설명에 따라 이미지를 생성합니다. </p>
+<p>모델 파일들은 주로 <strong>'.ckpt'</strong> 확장명을 가지고 있으며, </p>
+<p>이를 통해 사용자들은 텍스트를 기반으로 이미지를 생성(Txt2img)하거나, 기존 이미지를 변환(Img2img)할 수 있습니다.</p>
+<hr />
 <p align="center">
   <img src="../../img/txt_img1.png" alt="Generative AI in Architecture">
   <img src="../../img/txt_img0.png" alt="Generative AI in Architecture">
 </p>
 
-<p>우선, Txt2img를 하기 위해서 다루어야하는 요소(Factor)들은 아래와 같으며, 차례대로 설명드리도록 하겠습니다.</p>
-<p>1) Prompt (Positive Prompt / Negative Prompt)
-2) Sampling Methods
-3) Sampling Steps
-4) Size (가로, 세로)
-5) Batch
-6) CFG Scale
-7) Seed</p>
+<p>Txt2img 과정을 이해하기 위한 변수들을 차례대로 설명하겠습니다.</p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1</span><span class="p">)</span><span class="w"> </span><span class="n">Prompt</span><span class="w"> </span><span class="p">(</span><span class="nb">Pos</span><span class="n">itive</span><span class="w"> </span><span class="n">Prompt</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">Negative</span><span class="w"> </span><span class="n">Prompt</span><span class="p">)</span>
+<span class="mf">2</span><span class="p">)</span><span class="w"> </span><span class="n">Sampling</span><span class="w"> </span><span class="n">Methods</span>
+<span class="mf">3</span><span class="p">)</span><span class="w"> </span><span class="n">Sampling</span><span class="w"> </span><span class="kr">Step</span><span class="n">s</span>
+<span class="mf">4</span><span class="p">)</span><span class="w"> </span><span class="n">Size</span><span class="w"> </span><span class="p">(</span><span class="n">가로</span><span class="p">,</span><span class="w"> </span><span class="n">세로</span><span class="p">)</span>
+<span class="mf">5</span><span class="p">)</span><span class="w"> </span><span class="n">Batch</span>
+<span class="mf">6</span><span class="p">)</span><span class="w"> </span><span class="n">CFG</span><span class="w"> </span><span class="n">Scale</span>
+<span class="mf">7</span><span class="p">)</span><span class="w"> </span><span class="n">Seed</span>
+</code></pre></div>
+
 <hr />
-<ol>
-<li>Prompt (Positive Prompt / Negative Prompt)</li>
-</ol>
+<h2 id="1-prompt"><strong>1. Prompt</strong></h2>
+<p>Positive Prompt와 Negative Prompt는 Txt2img 과정에서 중요한 역할을 합니다.</p>
 <p align="center">
   <img src="../../img/txt_img2.png" alt="Generative AI in Architecture">
 </p>
-<p>Prompt (Positive Prompt): 사용자가 만들고자 하는 이미지에 대한 설명을 텍스트로 입력하는 부분입니다. 예를 들어, 'Create a serene image of a minimalist home nestled in a forest with large windows to allow natural light'와 같은 프롬프트를 입력하면, 해당 설명에 부합하는 이미지가 생성됩니다.
-Negative Prompt: 이미지 생성 과정에서 제외하고 싶은 요소를 명시하는 부분입니다. Negative Prompt는 이미지 생성에 영향을 미쳐 원치 않는 요소를 최소화하는 데 도움을 줍니다. 하지만, 모든 Negative Prompt가 반드시 완전히 반영되는 것은 아니며, 주로 제외될 확률을 높이는 역할을 합니다.
-Prompt의 중요성: Prompt는 생성될 이미지의 스타일, 분위기, 구성 요소 등을 결정하는 핵심 요소입니다. Positive Prompt와 Negative Prompt의 조합을 통해 사용자는 원하는 이미지를 더 정확하게 지시할 수 있습니다.</p>
-<ol>
-<li>Sampling Methods</li>
-</ol>
+
+<h4 id="1-1-positive-prompt"><strong>1-1. Positive Prompt</strong></h4>
+<p>사용자가 생성하고자 하는 이미지의 특징과 요소에 대한 상세한 텍스트 설명입니다. </p>
+<p>예를 들어, "Create a serene image of a minimalist home nestled in a forest with large windows to allow natural light"와 같은 프롬프트를 입력하면, 이 설명에 부합하는 이미지가 생성됩니다. </p>
+<p>이미지의 스타일, 분위기, 구성 요소 등을 결정하는 데 핵심적인 역할을 합니다.</p>
+<h4 id="1-2-negative-prompt"><strong>1-2. Negative Prompt</strong></h4>
+<p>이미지 생성 과정에서 원치 않는 요소를 명시하는 부분입니다. </p>
+<p>Negative Prompt는 생성된 이미지에서 특정 요소들을 최소화하는 데 도움을 주지만, 모든 Negative Prompt가 반드시 완전히 반영되는 것은 아닙니다.
+ 주로 제외될 확률을 높이는 역할을 하며, 이를 통해 더욱 정밀한 이미지 생성이 가능해집니다.</p>
+<hr />
+<h2 id="2-sampling-method"><strong>2. Sampling Method</strong></h2>
 <p align="center">
   <img src="../../img/txt_img7.png" alt="Generative AI in Architecture">
 </p>
-<p>Prompt – A middle century art gallery with several digital art pieces
+<div class="codehilite"><pre><span></span><code>Prompt – A middle century art gallery with several digital art pieces
 Steps – 27
 Image Size – 512 x 512
 CFG Scale – 7
-Seed – 1573819953</p>
-<p>Sampling Methods의 기능: 각각의 Sampling Method는 샘플 추출 과정에 대해 다른 접근법을 제공합니다. 이는 모델이 생성하려는 이미지로 실제로 이동하는 방법을 결정하는 데 중요합니다.
-다양한 실험 가능: 다양한 Sampling Methods를 시도함으로써, 원하는 결과와 성능에 맞는 방법을 찾을 수 있습니다. 각 방법은 이미지 생성 과정에 다르게 영향을 미칩니다.
-기본 설정 사용: 기본적으로 설정된 'Euler a' 방법을 사용하는 것이 일반적이지만, 다른 샘플러를 시도하는 것도 가능합니다.
-샘플러의 영향: 대부분의 샘플러는 이미지를 비슷하게 생성하지만, 일부 샘플러는 이미지에 큰 영향을 미칠 수 있습니다. 어떤 샘플러는 적은 단계로 더 잘 작동하며, 또 다른 샘플러는 특정 범위의 샘플링 단계에서 더 높은 품질의 이미지를 생성할 수 있습니다.</p>
-<ol>
-<li>Sampling Steps</li>
-</ol>
+Seed – 1573819953
+</code></pre></div>
+
+<h4 id="2-1-sampling-method"><strong>2-1. Sampling Method</strong></h4>
+<p>각각의 Sampling Method는 샘플 추출 과정에 대해 다른 접근법을 제공합니다. </p>
+<p>이는 모델이 생성하려는 이미지로 실제로 벡터들이 이동하는 방법을 결정하는 데 중요합니다.
+'Euler a' 방법을 사용하는 것이 일반적이지만, 다른 샘플러를 시도하는 것도 가능합니다.</p>
+<h4 id="2-2"><strong>2-2. 샘플러의 영향</strong></h4>
+<p>대부분의 샘플러는 이미지를 비슷하게 생성하지만, 일부 샘플러는 큰 영향을 미칠 수 있습니다. 
+ 어떤 샘플러는 적은 단계로 더 잘 작동하며, 또 다른 샘플러는 특정 범위의 샘플링 단계에서 더 높은 품질의 이미지를 생성할 수 있습니다.</p>
+<hr />
+<h2 id="3-sampling-steps"><strong>3. Sampling Steps</strong></h2>
 <p align="center">
   <img src="../../img/txt_img3.png" alt="Generative AI in Architecture">
 </p>
-<p>ampling Steps의 역할: 이미지 생성 과정의 단계를 결정합니다. 이는 생성되는 이미지의 품질과 스타일에 직접적인 영향을 미칩니다.
-품질과 시간의 균형: 일반적으로 더 많은 Sampling Steps를 사용하면 더 높은 품질의 이미지를 생성할 수 있지만, 생성 시간이 더 길어집니다. 반면, 너무 적은 Sampling Steps는 생성된 이미지의 품질 저하를 초래할 수 있습니다.
-적절한 설정의 중요성: Sampling Steps는 생성되는 이미지의 품질과 스타일, 그리고 생성 시간 사이의 균형을 맞추는 데 중요한 역할을 합니다. 따라서 상황에 맞게 조절하여 사용하는 것이 좋습니다.</p>
-<ol>
-<li>
-<p>Size
-트레이닝 사이즈의 영향: Stable Diffusion은 일반적으로 512x512 사이즈로 트레이닝됩니다. 이러한 트레이닝 사이즈는 모델이 최적화된 이미지 크기를 의미하며, 이 범위 내에서 가장 안정적인 결과를 기대할 수 있습니다.
-크기 증가에 따른 변화: 이미지 크기를 트레이닝된 사이즈보다 크게 조정할 경우, 예상치 못한 결과가 발생할 수 있습니다. 예를 들어, 건물이 두 개 생성되는 현상, 사람이 두 명 나타나는 현상 등이 이에 해당합니다. 이는 모델의 'attention cloud'가 큰 이미지에서 분산되어 예상과 다른 방식으로 작동하기 때문입니다.
-주의사항: 너무 큰 크기로 설정할 경우, 모델의 atte</p>
-</li>
-<li>
-<p>Batch 
-Batch 설정은 Stable Diffusion에서 한번에 생성할 이미지의 수와 그 생성의 단위를 결정하는 설정입니다. </p>
-</li>
-</ol>
-<p>배치 수: 생성할 이미지의 총 개수를 정하는 설정입니다. 사용자가 원하는 이미지의 총량을 설정할 수 있습니다.
-배치 크기: 한 번에 생성할 이미지의 수를 정하는 설정입니다. 이는 한 번의 실행으로 몇 장의 이미지를 동시에 생성할지 결정합니다.
-배치 크기의 중요성: 배치 크기를 높게 설정하면 시스템에 과부하가 걸릴 수 있습니다. 따라서 안정성을 고려하여 일반적으로 배치 크기를 '1'로 설정하는 것이 권장됩니다.</p>
-<ol>
-<li>CFG Scale </li>
-</ol>
-<p>CFG Scale은 Stable Diffusion의 중요한 설정 중 하나로, 프롬프트에 얼마나 충실할 것인지 결정하는 가중치입니다. 요약하면 다음과 같습니다:
-<br />
+
+<h4 id="3-1-sampling-steps"><strong>3-1 Sampling Steps</strong></h4>
+<p>이미지 생성 과정의 단계를 의미하며, 품질과 스타일에 직접적인 영향을 미칩니다.</p>
+<p>일반적으로 더 많은 Sampling Steps를 사용하면 더 높은 품질의 이미지를 생성할 수 있지만, 생성 시간이 더 길어집니다. </p>
+<p>반면, 너무 적은 Sampling Steps는 이미지의 품질 저하를 초래할 수 있습니다.</p>
+<p>Sampling Steps는 이미지의 품질과 스타일, 그리고 생성 시간 사이의 균형을 맞추는 데 중요한 역할을 합니다. 따라서 상황에 맞게 조절하여 사용하는 것이 좋습니다.</p>
+<hr />
+<h2 id="4-size"><strong>4. Size</strong></h2>
+<h4 id="4-1-size"><strong>4-1 Size</strong></h4>
+<p>Stable Diffusion과 같은 모델들은 특정한 이미지 사이즈, 
+예를 들면 512~1024의 픽셀로 트레이닝됩니다. </p>
+<p>이 사이즈는 모델이 이미지를 생성할 때 가장 효율적으로 작동하는 크기를 나타냅니다.
+즉, 이 사이즈에서 모델은 학습 데이터에 기반하여 가장 안정적이고 정확한 결과를 제공합니다.</p>
+<h4 id="4-2"><strong>4-2 크기 증가의 영향</strong></h4>
+<p>만약 트레이닝 사이즈보다 큰 이미지를 생성하려고 시도한다면, 예상치 못한 결과가 발생할 수 있습니다.</p>
+<p>예를 들어, 모델이 하나의 건물 대신 두 개의 건물을 만들거나, 사람의 형태가 이상하게 나타나는 경우 등이 있습니다.
+이러한 현상은 모델이 더 큰 이미지에 대해 최적화되지 않았기 때문에 발생합니다.</p>
+<hr />
+<h2 id="5-batch"><strong>5. Batch</strong></h2>
+<p>Batch 설정은 Stable Diffusion에서 한번에 생성할 이미지의 수와 그 생성의 단위를 결정하는 설정입니다. </p>
+<h4 id="5-1">5-1 배치 수</h4>
+<p>생성할 이미지의 총 개수를 정하는 설정입니다.</p>
+<h4 id="5-2">5-2 배치 크기</h4>
+<p>한 번에 생성할 이미지의 수를 정하는 설정입니다.<br />
+ 한 번의 실행으로 몇 장의 이미지를 동시에 생성할지 결정합니다.</p>
+<hr />
+<h2 id="6-cfg-scale"><strong>6. CFG Scale</strong></h2>
+<p>CFG Scale은 Stable Diffusion의 중요한 설정 중 하나로, 프롬프트에 얼마나 충실할 것인지 결정하는 가중치입니다.</p>
 <p align="center">
   <img src="../../img/txt_img5.png" alt="Generative AI in Architecture" width= "800px">
 </p>
-</p>
-<p>CFG Scale의 역할: 프롬프트에 따른 이미지의 생성 정도를 조절합니다. 높은 CFG Scale 값은 프롬프트에 더 충실한 이미지를 생성하지만, 동시에 프롬프트에만 편향될 가능성이 높아집니다.
-적정 값 설정: 일반적으로 7~11 범위의 CFG Scale이 적당합니다. 이 범위는 지시에 충분히 따르면서도 일정 수준의 창의성을 유지할 수 있습니다.
-낮은 값의 효과: CFG Scale 값을 낮게 설정하면 더 창의적인 결과물을 얻을 수 있습니다.
-실험적 사용: CFG Scale 값을 Sampling Steps와 함께 다양하게 조절해보면서 최적의 결과를 찾는 것이 좋습니다.</p>
-<p>CFG Scale 역시 Sampling Steps와 같이 바꿔가며 사용하시면 됩니다.
-https://www.bercon.org/b24f00d3-bf56-4f3c-977e-b9de6b59ecf4</p>
-<ol>
-<li>Seed</li>
-</ol>
+<div class="codehilite"><pre><span></span><code><span class="err">출처</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">https</span><span class="o">://</span><span class="n">www</span><span class="o">.</span><span class="na">bercon</span><span class="o">.</span><span class="na">org</span><span class="o">/</span><span class="n">b24f00d3</span><span class="o">-</span><span class="n">bf56</span><span class="o">-</span><span class="mi">4</span><span class="n">f3c</span><span class="o">-</span><span class="mi">977</span><span class="n">e</span><span class="o">-</span><span class="n">b9de6b59ecf4</span>
+</code></pre></div>
+
+<h4 id="6-1-cfg-scale">6-1 CFG Scale</h4>
+<p>프롬프트에 따른 이미지의 생성 정도를 조절합니다. </p>
+<p>높은 CFG Scale 값은 프롬프트에 더 충실한 이미지를 생성하지만, 동시에 프롬프트에만 편향될 가능성이 높아집니다.</p>
+<p>낮은 CFG Scale 값은 더 창의적인 결과물을 얻을 수 있지만, 프롬프트와는 동떨어진 내용이 나올 수 있습니다. </p>
+<p>일반적으로 7~11 범위의 CFG Scale이 적당합니다. </p>
+<hr />
+<h2 id="7-seed"><strong>7. Seed</strong></h2>
 <p align="center">
   <img src="../../img/txt_img4.png" alt="Generative AI in Architecture">
 </p>
 
-<p>시드 값 변경: -1을 입력하면 매번 다른 이미지가 생성되며, 특정 시드 값 입력시 비슷한 구도나 스타일의 이미지를 반복적으로 생성할 수 있습니다. 하지만, 항상 정확히 동일한 결과를 보장하지는 않습니다.
-이미지 사이즈 변경: 이미지의 크기를 변경하면 동일한 시드 값을 사용하더라도, 조금 다른 구도나 스타일의 이미지가 생성될 수 있습니다.
-프롬프트 변경: 프롬프트에 소소한 변경을 적용하면, 같은 시드 값을 사용해도 다른 스타일이나 구도의 이미지가 생성될 가능성이 있습니다.
-시드 값과 이미지 사이즈, 프롬프트 변경은 ControlNet을 사용하여 다양한 결과를 탐색하고 실험하는데 유용합니다. 이러한 기능들은 사용자가 원하는 방향으로 이미지를 조정하고 다양성을 탐구할 수 있게 도와줍니다.</p>
+<h4 id="7-1-seed">7-1 Seed</h4>
+<p>-1을 입력하면 매번 다른 이미지가 생성되며, 특정 시드 값 입력시 비슷한 구도나 스타일의 이미지를 반복적으로 생성할 수 있습니다. </p>
+<p>하지만, 항상 정확히 동일한 결과를 보장하지는 않습니다.</p>
+<h4 id="7-1-change-with-same-seed">7-1 change with same seed</h4>
+<p>이미지의 크기 와 프롬프트를 변경하면 동일한 시드 값을 사용하더라도, 조금 다른 구도나 스타일의 이미지가 생성될 수 있습니다.</p>
+<p>시드 값과 이미지 사이즈, 프롬프트 변경은 ControlNet을 사용하여 다양한 결과를 탐색하고 실험하는데 유용합니다. </p>
+<hr />
 
 
 
