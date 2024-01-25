@@ -3,28 +3,28 @@ site_name: Stable diffusion for Architects [KR]
 nav:
   - 0.Home: "index.md"
   - 1.시작(생성형 AI): 
-      - What is Gen AI? : "1.Intro/intro.md"
-      - What is Stable diffusion? : "1.Intro/stablediff.md"
+      - 1-1 AI? : "1.Intro/intro.md"
+      - 1-2 Stable diffusion? : "1.Intro/stablediff.md"
   - 2.설치(stable diffusion): 
-      - Install : "2.install/install.md"
-  - 3.디자인 옵션 탐색(Prompt): 
-      - Webui 기본 인터페이스 : "3.DesignOptions/interface.md"
-      - Parameter : "3.DesignOptions/howtouse.md"
-      - Prompt  : "3.DesignOptions/3.prompt.md"
-      - txt to image : "3.DesignOptions/txt to img.md"
-      - image to image : "3.DesignOptions/img to img.md"
-      - inpaint-outpaint : "3.DesignOptions/inpaintoutpaint.md"
-  - 4.재료 및 텍스쳐 선택 (LoRA): 
-      - Texture : "4.texture/texture.md"
-      - LoRA : "4.texture/LoRA.md"
-      - How to LoRA: "4.texture/HowtoLoRA.md"
-  - 5.주변 환경 적용(Control-net) : 
-      - Control_net : "5.Control_net/Control_net_basics.md"
-      - Control_net_models : "5.Control_net/Control_net_models.md"
-  - 6.개념 시각화 및 도면 작업:
-      - Visualization : "6.Visualization/visualization.md"
-  - 7.Generative 3D:
-      - Gen 3d: "7.Gen 3D modeling/gen3d.md"
+      - 2-1 로컬 설치 방법 : "2.install/install.md"
+  - 3.디자인 옵션 탐색: 
+      - 3-1 기본 기능 : "3.DesignOptions/howtouse.md"
+      - 3-2 txt to image : "3.DesignOptions/txt to img.md"
+      - 3-3 img to image : "3.DesignOptions/img to img.md"  
+      - 3-4 inpaint : "3.DesignOptions/inpaintoutpaint.md"   
+  - 4.프롬프트 엔지니어링: 
+      - 4-1 Prompt : "3.DesignOptions/3.prompt.md"        
+  - 5.재료 및 텍스쳐 선택 (LoRA):       
+      - 5-1 LoRA : "4.texture/LoRA.md"
+      - 5-2 How to LoRA: "4.texture/HowtoLoRA.md"
+      - 5-3 Texture : "4.texture/texture.md"
+  - 6.주변 환경 적용(Control-net) : 
+      - 6-1 Control_net : "5.Control_net/Control_net_basics.md"
+      - 6-2 Control_net_models : "5.Control_net/Control_net_models.md"
+  - 7.개념 시각화 및 도면 작업:
+      - 7-1 Visualization : "6.Visualization/visualization.md"
+  - 8.Generative 3D:
+      - 8-1 Gen 3d: "7.Gen 3D modeling/gen3d.md"
 
   - Documenting (TBR):
       - Instructions: "documenting/instructions.md"

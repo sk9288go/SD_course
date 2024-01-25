@@ -7,9 +7,10 @@
 <p>
      <span style="font-weight: bold; background-color: black; color: white;">"AI 시대의 도래는 많은 변화와 도전을 가져오고 있습니다."</span>
      <br><br>
-     <b>창의성,</b> 인간만이 할 수 있다고 여겨졌던 분야에서 AI의 역할이 점점 커지고 있습니다. <br>
+     <b>창의성,</b> 인간만이 할 수 있다고 여겨졌던 분야에서 AI의 역할이 점점 커지고 있습니다. <br><br>
+
      일부에서는, 직업 상실이나 기업의 몰락 같은 <b>부정적인 전망</b>으로 이어지기도 합니다. 
-     <br><br>
+     <br>
      <b>하지만,</b> 이러한 시각은 AI와 기술에 대한 깊은 이해가 부족할 때 나타납니다.
      <br><br>
      기술과 도구의 발전은 생산성 향상과 개인 역량 강화에 중요한 역할을 합니다. 
@@ -94,5 +95,4 @@
  AI는 창의적인 디자인의 일부분이지만, 전체 과정의 핵심은 여전히 인간의 창의성과 판단에 달려 있습니다.
 </p>
 
-출처 -
-https://www.internetmap.kr/entry/Basic-Theory-of-Stable-Diffusion
+    출처 -https://www.internetmap.kr/entry/Basic-Theory-of-Stable-Diffusion
