@@ -37,7 +37,7 @@ Img2img에서는 첨부한 Image에서 어떠한 변화를 주고자 하는지�
 
 ----
 
-## **23. Sampling Method**
+## **3. Sampling Method**
 
 <p align="center">
   <img src="../../img/txt_img7.png" alt="Generative AI in Architecture">
@@ -48,27 +48,27 @@ Img2img에서는 첨부한 Image에서 어떠한 변화를 주고자 하는지�
     CFG Scale – 7
     Seed – 1573819953
 
-#### **2-1. Sampling Method** 
+#### **3-1. Sampling Method** 
 
 각각의 Sampling Method는 샘플 추출 과정에 대해 다른 접근법을 제공합니다. 
 
 이는 모델이 생성하려는 이미지로 실제로 벡터들이 이동하는 방법을 결정하는 데 중요합니다.
 'Euler a' 방법을 사용하는 것이 일반적이지만, 다른 샘플러를 시도하는 것도 가능합니다.
 
-#### **2-2. 샘플러의 영향** 
+#### **3-2. 샘플러의 영향** 
 
  대부분의 샘플러는 이미지를 비슷하게 생성하지만, 일부 샘플러는 큰 영향을 미칠 수 있습니다. 
  어떤 샘플러는 적은 단계로 더 잘 작동하며, 또 다른 샘플러는 특정 범위의 샘플링 단계에서 더 높은 품질의 이미지를 생성할 수 있습니다.
 
 ----
 
-## **3. Sampling Steps**
+## **4. Sampling Steps**
 
 <p align="center">
   <img src="../../img/img_img4.png" alt="Generative AI in Architecture">
 </p>
 
-#### **3-1 Sampling Steps**
+#### **4-1 Sampling Steps**
 
 이미지 생성 과정의 단계를 의미하며, 품질과 스타일에 직접적인 영향을 미칩니다.
 
@@ -80,9 +80,9 @@ Sampling Steps는 이미지의 품질과 스타일, 그리고 생성 시간 사�
 
 ----
 
-## **4. Size**
+## **5. Size**
 
-#### **4-1 Size** 
+#### **5-1 Size** 
 
 Stable Diffusion과 같은 모델들은 특정한 이미지 사이즈, 
 예를 들면 512~1024의 픽셀로 트레이닝됩니다. 
@@ -90,7 +90,7 @@ Stable Diffusion과 같은 모델들은 특정한 이미지 사이즈,
 이 사이즈는 모델이 이미지를 생성할 때 가장 효율적으로 작동하는 크기를 나타냅니다.
 즉, 이 사이즈에서 모델은 학습 데이터에 기반하여 가장 안정적이고 정확한 결과를 제공합니다.
 
-#### **4-2 크기 증가의 영향** 
+#### **5-2 크기 증가의 영향** 
 
 만약 트레이닝 사이즈보다 큰 이미지를 생성하려고 시도한다면, 예상치 못한 결과가 발생할 수 있습니다.
 
@@ -99,20 +99,20 @@ Stable Diffusion과 같은 모델들은 특정한 이미지 사이즈,
 
 ----
  
-## **5. Batch** 
+## **6. Batch** 
 
 Batch 설정은 Stable Diffusion에서 한번에 생성할 이미지의 수와 그 생성의 단위를 결정하는 설정입니다. 
 
-#### 5-1 배치 수
+#### 6-1 배치 수
   생성할 이미지의 총 개수를 정하는 설정입니다.
 
-#### 5-2 배치 크기
+#### 6-2 배치 크기
  한 번에 생성할 이미지의 수를 정하는 설정입니다.  
  한 번의 실행으로 몇 장의 이미지를 동시에 생성할지 결정합니다.
 
 ----
  
-## **6. CFG Scale** 
+## **7. CFG Scale** 
 
 CFG Scale은 Stable Diffusion의 중요한 설정 중 하나로, 프롬프트에 얼마나 충실할 것인지 결정하는 가중치입니다.
 
@@ -121,7 +121,7 @@ CFG Scale은 Stable Diffusion의 중요한 설정 중 하나로, 프롬프트에
 </p>
     출처 : https://www.bercon.org/b24f00d3-bf56-4f3c-977e-b9de6b59ecf4
 
-#### 6-1 CFG Scale
+#### 7-1 CFG Scale
 
  프롬프트에 따른 이미지의 생성 정도를 조절합니다. 
  
@@ -133,18 +133,18 @@ CFG Scale은 Stable Diffusion의 중요한 설정 중 하나로, 프롬프트에
 
 ----
 
-## **7. Seed** 
+## **8. Seed** 
 <p align="center">
   <img src="../../img/txt_img4.png" alt="Generative AI in Architecture">
 </p>
 
-#### 7-1 Seed
+#### 8-1 Seed
 
 -1을 입력하면 매번 다른 이미지가 생성되며, 특정 시드 값 입력시 비슷한 구도나 스타일의 이미지를 반복적으로 생성할 수 있습니다. 
 
 하지만, 항상 정확히 동일한 결과를 보장하지는 않습니다.
 
-#### 7-1 change with same seed
+#### 9-1 change with same seed
 
 이미지의 크기 와 프롬프트를 변경하면 동일한 시드 값을 사용하더라도, 조금 다른 구도나 스타일의 이미지가 생성될 수 있습니다.
 
