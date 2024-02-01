@@ -4,7 +4,7 @@
 <p align="center">
   <img src="../../img/img_img1.png" alt="Generative AI in Architecture">
 </p>
-Txt2img 과정을 이해하기 위한 변수들을 차례대로 설명하겠습니다.
+img2img 의 변수로는
 
     1) Prompt (Positive Prompt / Negative Prompt)
     2) Sampling Methods
@@ -18,7 +18,7 @@ Txt2img 과정을 이해하기 위한 변수들을 차례대로 설명하겠습�
 
 ### **1. Prompt**
 
-Img2img에서는 첨부한 Image에서 어떠한 변화를 주고자 하는지를 프롬프트에 써주시면 됩니다.
+첨부한 Image에서 어떠한 변화를 주고자 하는지를 프롬프트칸에 적습니다.
 
     Positive Prompt : 'A hospital building with a towering presence, glistening silver and white exterior, modernist design by Richard Meier, situated in an urban area with bright and sunny natural lighting, high definition.'    
     Negative Prompt : 'Ugly, watermark, signature, cut off, low contrast, underexposed, overexposed, beginner, amateur, blurry, grainy.'
