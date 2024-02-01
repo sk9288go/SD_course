@@ -9,7 +9,7 @@
   <img src="../../img/txt_img1.png" alt="Generative AI in Architecture">
   <img src="../../img/txt_img0.png" alt="Generative AI in Architecture">
 
-Txt2img 과정을 이해하기 위한 변수들을 차례대로 설명하겠습니다.
+Txt2img의 변수로는
 
     1) Prompt (Positive Prompt / Negative Prompt)
     2) Sampling Methods
