@@ -10,17 +10,19 @@
      출처 : https://twitter.com/huggingface/status/1582794699970347009/photo/1
 
  
-사진을 보면, 왼쪽에는 사자의 얼굴이 특정 색으로 칠해져 있고, 명령창에는 'gorilla'라고 입력되어 있습니다. 이에 대한 결과로, 
+왼쪽에는 사자의 얼굴이 칠해져 있고, 'gorilla'라고 입력되어 있습니다. 
+칠해진 부분이 고릴라의 얼굴로 변한 사자의 이미지가 나타납니다.
 
-오른쪽 사진에는 원래 칠해진 부분이 고릴라의 얼굴로 변한 사자의 이미지가 나타납니다.
+>Inpainting 기능을 사용하면, 원하는 부분을 마스킹하고 새로운 프롬프트로 해당 영역을 변경할 수 있습니다.
+빠르고 효율적인 이미지 생성을 통해 다양한 시각적 실험을 진행할 수 있습니다.
 
-Inpainting 기능을 사용하면, 원하는 부분을 마스킹하고 새로운 프롬프트로 해당 영역을 변경할 수 있습니다.
-건축 디자인 분야에 이 기능을 활용한다면, 빠르고 효율적인 이미지 생성을 통해 다양한 시각적 실험을 진행할 수 있을 것입니다.
+----
+
 <p align="center">
   <img src="../../img/inpaint2.jpg" alt="Generative AI in Architecture">
 </p>
 
-특정 사이트에 건물을 지어 볼 수도 있을 것이고,
+> 특정 사이트에 건물을 생성할 수도,
 <p align="center">
   <img src="../../img/inpaint3.jpg" alt="Generative AI in Architecture">
 </p>
@@ -28,7 +30,7 @@ Inpainting 기능을 사용하면, 원하는 부분을 마스킹하고 새로운
   <img src="../../img/inpaint4.jpg" alt="Generative AI in Architecture">
 </p>
 
-기존 건물의 리모델링을 해보실 수도 있을 것입니다.
+> 기존 건물의 리모델링을 할 수도 있습니다.
 
 ----
 
@@ -46,28 +48,14 @@ inpaint 기능을 활용해 디자인 초기단계에서의 매스스터디 활�
 
 ----
 
-이러한 Inpaint 기능을 활용하기 위해서 중점적으로 다루어야 할 요소(Factor)는 아래와 같습니다.
+Inpaint 기능은 아래와 같이 나뉩니다.
  
-    1) Mask blur & Only masked padding, pixels
-    2) Mask mode
-    3) Denoising Strength
-
-또한 Inpaint는 Img2Img에 기반한 특수기능으로, Img2Img의 기본 설정값은
-
-    1) Prompt (Positive Prompt / Negative Prompt)
-    2) Image
-    3) Sampling Methods
-    4) Sampling Steps
-    5) Size (가로, 세로)
-    6) Batch
-    7) CFG Scale
-    8) Seed
-
-그리고 위에 언급되지 않은 요소들은 기본값을 그대로 활용하시면 됩니다.
+    1) inpaint masked  : 마스크 구역만 이미지 변경
+    3) inpaint not masked : 마스크 구역이 아닌 부분 이미지 변경
 
 ----
 
-#### 3. Mask blur & Only masked padding, pixels
+#### 3. inpaint masked 
 
 <p align="center">
   <img src="../../img/inpaint8.gif" alt="Generative AI in Architecture">
