@@ -1294,7 +1294,7 @@
 <div class="codehilite"><pre><span></span><code> 출처 : https://twitter.com/huggingface/status/1582794699970347009/photo/1
 </code></pre></div>
 
-<p>왼쪽에는 사자의 얼굴이 칠해져 있고, 'gorilla'라고 입력되어 있습니다. 
+<p>사자의 얼굴이 칠해져 있고, 'gorilla'라고 입력되어 있습니다. 
 칠해진 부분이 고릴라의 얼굴로 변한 사자의 이미지가 나타납니다.</p>
 <blockquote>
 <p>Inpainting 기능을 사용하면, 원하는 부분을 마스킹하고 새로운 프롬프트로 해당 영역을 변경할 수 있습니다.
@@ -1344,9 +1344,11 @@ Steps: 50, Sampler: Euler a, CFG scale: 7, Seed: -1, Size: 768x512, Model hash: 
 </p>
 
 <p>Inpainting 기능을 사용하기 위해서는 우선 마스킹할 부분을 지정해야 합니다.</p>
+<blockquote>
 <p>Mask blur와 Padding 값의 설정은 Adobe Photoshop의 Mask 기능과 Feather 기능과 흡사합니다.
 Feather 값이 높을수록 선택된 영역의 경계가 부드럽고 흐릿하게 처리되는 것 처럼
 Inpainting에서도 Mask blur와 Padding 값은 유사한 역할을 합니다.</p>
+</blockquote>
 <hr />
 <h4 id="4-mask-mode">4. Mask mode</h4>
 <p align="center">
@@ -1354,18 +1356,20 @@ Inpainting에서도 Mask blur와 Padding 값은 유사한 역할을 합니다.</
 </p>
 
 <p>Inpaint 기능에서 Mask mode를 사용하면, 특정 영역을 선택하여 그 영역만 변경하거나, 반대로 선택한 영역을 제외한 나머지 부분만 변경하는 것이 가능합니다.
-이는 사용자가 원하는 부분에만 초점을 맞추거나, 특정 부분을 보존하면서 나머지를 변형시킬 수 있게 해줍니다.</p>
-<div class="codehilite"><pre><span></span><code>Inpaint 기능을 ControlNet과 함께 사용하면, 이미지의 주변 컨텍스트 요소를 보존하면서도 특정 부분을 정교하게 수정할 수 있습니다. ControlNet은 이미지의 전반적인 구조와 맥락을 인식하고 유지하는 기능으로, 이를 통해 이미지의 자연스러움과 일관성을 유지할 수 있습니다.
-</code></pre></div>
-
+원하는 부분에만 초점을 맞추거나, 특정 부분을 보존하면서 나머지를 변형시킬 수 있게 해줍니다.</p>
+<blockquote>
+<p>Inpaint 기능을 ControlNet과 함께 사용하면, 이미지의 주변 컨텍스트 요소를 보존하면서도 특정 부분을 정교하게 수정할 수 있습니다. ControlNet은 이미지의 전반적인 구조와 맥락을 인식하고 유지하는 기능으로, 이를 통해 이미지의 자연스러움과 일관성을 유지할 수 있습니다.</p>
+</blockquote>
 <hr />
 <h4 id="3-denoising-strength">3. Denoising Strength</h4>
 <p align="center">
   <img src="../../img/inpaint10.jpg" alt="Generative AI in Architecture">
 </p>
 
+<blockquote>
 <p><strong>Denoising Strength</strong>는 Inpainting 과정에서 원본 이미지를 얼마나 변경할 것인지 결정하는 설정값입니다. 
 이 값은 0부터 1 사이에서 조절할 수 있으며, 0은 원본 이미지에 변화를 주지 않음을, 1은 Mask된 영역과 관계없이 완전히 새로운 이미지를 생성함을 의미합니다.</p>
+</blockquote>
 <hr />
 
 
