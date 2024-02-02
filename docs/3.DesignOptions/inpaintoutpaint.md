@@ -38,8 +38,7 @@
 
 inpaint 기능을 활용해 디자인 초기단계에서의 매스스터디 활용예시입니다.
 <p align="center">
-  <img src="../../img/inpaint5.png" alt="Generative AI in Architecture">
-  <img src="../../img/inpaint6.png" alt="Generative AI in Architecture">
+  <img src="../../img/inpaint5.png" alt="Generative AI in Architecture"> 
 </p>
 
     Rectangular tall office architecture, bright sunlight casting shadows on the structures, photorealistic architectural rendering in digital painting, neutral colors with splashes of vibrant accents, created using Vray, high-quality 8K UHD resolution.

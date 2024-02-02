@@ -3,13 +3,12 @@
 **Text to Image (Txt2img)** 텍스트 설명을 바탕으로 이미지를 생성하는 방식입니다.
 
 > Stable Diffusion은 대량의 이미지 데이터를 학습하여 구축된 모델을 사용합니다. <br>
-모델들은 '레시피' 혹은 '뇌'와 유사한 역할을 하며, 사용자가 제공하는 텍스트 설명에 따라 이미지를 생성합니다. 
+모델들은 '레시피'와 유사한 역할을 하며, 사용자가 제공하는 텍스트 설명에 따라 이미지를 생성합니다. 
 ----
 
   <img src="../../img/txt_img1.png" alt="Generative AI in Architecture">
-  <img src="../../img/txt_img0.png" alt="Generative AI in Architecture">
 
-Txt2img의 변수로는
+Txt2img의 변수는 다음과 같습니다.
 
     1) Prompt (Positive Prompt / Negative Prompt)
     2) Sampling Methods
@@ -18,6 +17,7 @@ Txt2img의 변수로는
     5) Batch
     6) CFG Scale
     7) Seed
+
 ---- 
 
 ### **1. Prompt** 
@@ -36,7 +36,7 @@ Positive Prompt와 Negative Prompt는 Txt2img 과정에서 중요한 역할을 �
 #### **1-2. Negative Prompt** 
 
  > 이미지 생성 과정에서 원치 않는 요소를 명시하는 부분입니다.  
- Negative Prompt는 생성된 이미지에서 특정 요소들을 최소화하는 데 도움을 주지만, 모든 Negative Prompt가 반드시 완전히 반영되는 것은 아닙니다.
+ Negative Prompt는 생성된 이미지에서 특정 요소들을 최소화하는 데 도움을 주지만, 모든 내용이 반드시 완전히 반영되는 것은 아닙니다.
 
 ----
 ### **2. Sampling Method**
@@ -52,9 +52,9 @@ Positive Prompt와 Negative Prompt는 Txt2img 과정에서 중요한 역할을 �
 
 #### **2-1. Sampling Method** 
 
-> 각각의 Sampling Method는 샘플 추출 과정에 대해 다른 접근법을 제공합니다. 
-<br>모델이 생성하려는 이미지로 벡터들이 이동하는 **방법을 결정하는 데** 중요합니다.
-'Euler a' 방법을 사용하는 것이 일반적이지만, 다른 샘플러를 시도하는 것도 가능합니다.
+각각의 Sampling Method는 샘플 추출 과정에 대해 다른 접근법을 제공합니다. 
+>모델이 생성하려는 이미지로 벡터들이 이동하는 **방법을 결정하는 데** 중요합니다.
+<br>'Euler a' 방법을 사용하는 것이 일반적이지만, 다른 샘플러를 시도하는 것도 가능합니다.
 
 #### **2-2. 샘플러의 영향** 
 
@@ -70,8 +70,8 @@ Positive Prompt와 Negative Prompt는 Txt2img 과정에서 중요한 역할을 �
 
 #### **3-1 Sampling Steps**
 
->이미지 생성 과정의 단계를 의미하며, **품질과 스타일**에 직접적인 영향을 미칩니다. <br>
-일반적으로 더 많은 Sampling Steps를 사용하면 더 높은 품질의 이미지를 생성할 수 있지만, 생성 시간이 더 길어집니다. <br><br>
+이미지 생성 과정의 단계를 의미하며, **품질과 스타일**에 직접적인 영향을 미칩니다. <br>
+>일반적으로 더 많은 Sampling Steps를 사용하면 더 높은 품질의 이미지를 생성할 수 있지만, 생성 시간이 더 길어집니다. <br><br>
 반면, 너무 적은 Sampling Steps는 이미지의 **품질 저하**를 초래할 수 있습니다.
 Sampling Steps는 이미지의 품질과 스타일, 그리고 생성 시간 사이의 균형을 맞추는 데 중요한 역할을 합니다. 따라서 상황에 맞게 조절하여 사용하는 것이 좋습니다.
 
