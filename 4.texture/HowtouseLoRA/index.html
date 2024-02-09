@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../6.Visualization/visualization/">
+        <link rel="prev" href="../LoRA/">
       
       
-        <link rel="next" href="../../7.Gen%203D%20modeling/gen3d/">
+        <link rel="next" href="../train%20LoRA/">
       
       
       <link rel="icon" href="../../favicon.ico">
@@ -20,7 +20,7 @@
     
     
       
-        <title>7-2 exterior lighting - Stable diffusion for Architects [KR]</title>
+        <title>5-2 How to LoRA - Stable diffusion for Architects [KR]</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ai" class="md-skip">
+        <a href="#lora" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              7-2 exterior lighting
+              5-2 How to LoRA
             
           </span>
         </div>
@@ -484,6 +484,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3.DesignOptions/upscaler/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3-5 upscale
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -560,19 +581,21 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -586,7 +609,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             5.LoRA 스타일 적용
@@ -618,10 +641,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../HowtoLoRA/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    5-2 How to LoRA
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -630,6 +671,90 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lora" class="md-nav__link">
+    <span class="md-ellipsis">
+      LoRA 모델 사용법
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LoRA 모델 사용법">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lora_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      LoRA 가중치 사용
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lora_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      LoRA 사용 팁
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3줄 요약
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kohya" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kohya를 사용한 트레이닝 방법
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -642,11 +767,11 @@
   
   
     <li class="md-nav__item">
-      <a href="./" class="md-nav__link">
+      <a href="../train%20LoRA/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    5-3 Texture
+    5-3 How to train LoRA
   </span>
   
 
@@ -663,11 +788,11 @@
   
   
     <li class="md-nav__item">
-      <a href="./" class="md-nav__link">
+      <a href="../texture.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    5-4 조경 디자인
+    5-3 조경 디자인
   </span>
   
 
@@ -684,11 +809,11 @@
   
   
     <li class="md-nav__item">
-      <a href="./" class="md-nav__link">
+      <a href="../texture.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    5-5 평,입,단면 도면
+    5-4 평,입,단면 도면
   </span>
   
 
@@ -705,11 +830,11 @@
   
   
     <li class="md-nav__item">
-      <a href="./" class="md-nav__link">
+      <a href="../texture.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    5-6 인테리어 디자인
+    5-5 인테리어 디자인
   </span>
   
 
@@ -812,7 +937,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./" class="md-nav__link">
+      <a href="../texture.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -833,7 +958,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./" class="md-nav__link">
+      <a href="../texture.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -858,21 +983,19 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
@@ -886,7 +1009,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             7.빛과 조명연구
@@ -918,28 +1041,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    7-2 exterior lighting
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../texture.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -948,42 +1053,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ai" class="md-nav__link">
-    <span class="md-ellipsis">
-      AI가 생성한 이미지에서 재료와 텍스처 시뮬레이션 방법:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ai_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      AI 텍스처 생성 도구:
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1193,20 +1262,68 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ai" class="md-nav__link">
+  <a href="#lora" class="md-nav__link">
     <span class="md-ellipsis">
-      AI가 생성한 이미지에서 재료와 텍스처 시뮬레이션 방법:
+      LoRA 모델 사용법
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LoRA 모델 사용법">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lora_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      LoRA 가중치 사용
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#ai_1" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      AI 텍스처 생성 도구:
+      
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lora_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      LoRA 사용 팁
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3줄 요약
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kohya" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kohya를 사용한 트레이닝 방법
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1225,12 +1342,54 @@
                   
 
 
-  <h1>7-2 exterior lighting</h1>
+  <h1>5-2 How to LoRA</h1>
 
-<h3 id="ai">AI가 생성한 이미지에서 재료와 텍스처 시뮬레이션 방법:</h3>
-<p>AI 이미지 생성 기술은 <strong>다양한 재료와 텍스처를 사실적으로 재현</strong>할 수 있는 능력을 갖추고 있습니다. 이는 건축, 패션, 제품 디자인 등 다양한 분야에서 유용하게 활용됩니다. 예를 들어, AI는 목재, 금속, 유리와 같은 다양한 재료의 질감과 빛 반사 특성을 사실적으로 재현할 수 있습니다.</p>
-<h3 id="ai_1">AI 텍스처 생성 도구:</h3>
-<p>AI 텍스처 생성 도구는 <strong>자동으로 고품질의 텍스처를 생성</strong>하고, 사용자가 원하는 스타일과 특성을 쉽게 적용할 수 있도록 합니다. 이러한 도구들은 디자이너들이 수작업으로 시간을 들여 만들어야 하는 복잡한 텍스처 작업을 간소화합니다.</p>
+<h3 id="lora">LoRA 모델 사용법</h3>
+<p align="center">
+  <img src="../../img/lora5.png" alt="Generative AI in Architecture" width= "600px">
+</p>
+
+<p>스테이블디퓨전 창에서 생성 버튼의 아래에는 화투패로 보이는 버튼이 있습니다. </p>
+<blockquote>
+<p><strong>화투버튼을 클릭시</strong> : 이미지가 카드패와 같이 LoRA 모델에 해당하는 이미지들이 보여집니다. <br>
+<strong>해당카드를 클릭시</strong> : prompt에 자동으로 LoRA 모델은 로딩되어 사용을 할 수 있게 됩니다.</p>
+<blockquote>
+<p>모델을 클릭으로 로딩하면서 자동으로 LoRA 스타일이 적용되기는 하지만<br> 생성되는 이미지와 LoRA와의 연관성을 짓는 prompt를 작성하셔야 원하는 스타일에 가까운 이미지가 생성됩니다. </p>
+</blockquote>
+</blockquote>
+<hr />
+<h4 id="lora_1">LoRA 가중치 사용</h4>
+<p>LoRA 모델은 가중치의 수정을 통해 LoRA모델들을 섞거나, 가중치를 낮추어 얼마만큼이나 스타일을 적용할 지를 사용자가 선택할 수 있습니다.<br></p>
+<blockquote>
+<p>LoRA를 사용하는 문법 <code>&lt;lora:filename:multiplier&gt;</code> 에서 multiplier 값은 0~1 사이로 지정하면 됩니다.
+ <br> 0으로 지정하면 해당 LoRA를 사용하지 않는다는 뜻이 되고, 1로 지정하면 LoRA를 완전히 강하게 적용한다는 뜻입니다.
+ <br><br> 가령 <code>&lt;JL_sectionplan:1&gt;</code>로 되어 있는 수치를 <code>&lt;JL_sectionplan:0.1&gt;</code> 로 낮추어 적용한다면 0.1 만큼의 LoRA모델이 이미지 생성에 적용되며, 이런 식으로 가중치를 조절하여 두 가지의 LoRA모델을 하나의 이미지 생성에 사용도 가능합니다.</p>
+</blockquote>
+<p align="center"> 
+<b>< JL_sectionplan:0 > 사용하지 않음</b><br>
+<b>< JL_sectionplan:0.5 > 반만 사용</b><br>
+<b>< JL_sectionplan:1 > 완전히 사용</b></p>
+<h2 id="_1"></p></h2>
+<h4 id="lora_2">LoRA 사용 팁</h4>
+<ul>
+<li><strong>올바른 프롬프트 작성</strong>: LoRA 모델은 결과물이 지정된 경우가 많으므로, 이미지에 적합한 프롬프트를 작성해야 합니다. 잘못된 프롬프트로 인해 낮은 품질의 이미지가 생성될 수 있습니다.</li>
+<li><strong>네거티브 프롬프트 사용</strong>: 원치 않는 특성을 피하기 위해 네거티브 프롬프트(예: bad quality, bad line, bad windows)를 사용하여 더 나은 결과물을 만들 수 있습니다.</li>
+<li><strong>다양한 설정 시도</strong>: AI 이미지 생성은 여러 시도와 수정을 통해 원하는 결과물을 얻는 이미지 툴입니다. 최적의 결과를 얻기 위해 다양한 설정을 시도해보세요.</li>
+<li><strong>다른 기술과의 결합</strong>: 이미지와 텍스트 간의 관계를 더 세밀하게 조정하고 최적화하기 위해 LoRA와 control-net, inpaint 기능을 혼합해서 사용할 수 있습니다.</li>
+</ul>
+<hr />
+<h4 id="3">3줄 요약</h4>
+<ul>
+<li>Stable Diffusion에서 LoRA를 사용하면 사용자 정의 이미지 생성이 가능해집니다.</li>
+<li>LoRA 파일은 체크포인트 파일보다 훨씬 작은 용량을 가지고 있어 공유가 용이합니다.</li>
+<li>LoRA 모델은 가중치를 통해 얼마나 해당 특성을 적용할지를 지정할 수 있습니다.</li>
+</ul>
+<hr />
+<h3 id="kohya">Kohya를 사용한 트레이닝 방법</h3>
+<p style="margin-left: 20px;">
+ Kohya는 AI 모델을 사용자 정의하기 위한 도구 중 하나로, LoRA 기술을 활용하여 모델을 미세 조정할 수 있습니다.
+ 사용자는 Kohya를 통해 특정 재료나 텍스처에 대한 표본 이미지를 제공하고, 이를 기반으로 LoRA 트레이닝을 진행할 수 있습니다. 이 과정에서 모델은 제공된 표본 이미지의 특성을 학습하여, 유사한 스타일의 재료나 텍스처를 더 정확하게 생성할 수 있게 됩니다.
+</p>
 
 
 
