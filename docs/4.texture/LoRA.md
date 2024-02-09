@@ -2,6 +2,14 @@
 >LoRA(낮은 순위 적응)는 소량의 데이터만 사용하여 기존 모델을 신속하게 새로운 작업에 맞게 조정할 수 있는 기술입니다. 
 <br>이 기술은 모델의 **특정 부분**만 세밀하게 조정함으로써, Stable Diffusion에서는 LoRA를 통해 이미지 생성 과정을 사용자가 더욱 맞춤화할 수 있도록 지원합니다.
 
+#### **LoRA 작동원리** 
+
+LoRA는 스테이블 디퓨전 모델 중 가장 중요한 부분인 교차 인지(cross-attention) 레이어에 작은 변화를 가합니다. 여기가 이미지와 프롬프트가 만나는 지점입니다. 연구자들은 모델의 이 부분만 잘 세부조정해도 좋은 학습 결과를 달성하는데 충분하다는 것을 발견했습니다. 교차 인지 레이어는 아래의 스테이블 디퓨전 아키텍처 그림에서 노란색 부분에 해당합니다. 아래 그림은 Stable Diffusion 논문에서 가져온 것입니다.
+
+<p align="center">
+  <img src="../../img/sdlora.png" alt="Generative AI in Architecture">
+</p>
+
 #### **트레이닝의 필요성**
 특정 스타일이나 대상을 더 정확하고 사실적으로 재현하기 위해서는 모델을 해당 재료나 텍스처의 특성에 맞게 조정하는 것이 필요합니다. 
 
@@ -15,20 +23,20 @@ LoRA를 사용하면 기존 모델의 구조를 크게 변경하지 않으면서
   <img src="../../img/lora1.jpg" alt="Generative AI in Architecture">
 </p>
 <p style="margin-left: 20px;">
-위의 사진을 보시면 같은 프롬프트인 "A house for one family" 을 사용하더라도 LoRA를 적용함으로써 각기 다른 스타일, 뷰, 상황의 이미지가 생성됨을 볼 수 있습니다. 
+같은 프롬프트인 "A house for one family" 을 사용하더라도 LoRA를 적용함으로써 각기 다른 스타일, 뷰, 상황의 이미지가 생성됩니다.
 </p>
 ----
 <p align="center">
   <img src="../../img/lora4.jpg" alt="Generative AI in Architecture">
 </p>
 <p style="margin-left: 20px;">
-또한 LoRA 모델은 가중치 0 부터 1까지의 소수점 지정을 통해 두가지, 혹은 더 많은 LoRA들을 합쳐서 이미지 생성또한 가능합니다. </p>
+LoRA 모델은 가중치 0 부터 1까지의 소수점 지정을 통해 두가지, 혹은 더 많은 LoRA들을 합쳐서 이미지 생성또한 가능합니다. </p>
 ----
 <p align="center">
   <img src="../../img/lora2.jpg" alt="Generative AI in Architecture">
 </p>
 <p style="margin-left: 20px;">
-이러한 스타일의 중첩과 변화는 인테리어 디자인에서 더 큰 차이와 퀄리티를 끌어올릴 수 있습니다. 
+이러한 스타일의 중첩과 변화는 인테리어 디자인에서도 사용가능하며, 더 큰 차이와 퀄리티를 끌어올릴 수 있습니다. 
 </p>
 ----
 <p style="margin-left: 20px;">
