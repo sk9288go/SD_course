@@ -2,3 +2,33 @@
     white-space: pre-wrap !important;
     background-color: #ffddcc !important; /* 밝은 분홍색 배경으로 설정 */
 }
+.md-typeset {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px !important;
+}
+
+.md-typeset strong {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    font-weight: bold; /* 이미 굵은 텍스트이지만, 명시적으로 지정 */
+
+}
+
+.md-typeset blockquote {
+    color: darkgreen; /* 인용 텍스트 색상을 다크 그린으로 설정 */
+    border-left: 5px solid darkgreen; /* 왼쪽 테두리를 다크 그린으로 설정하여 인용 표시 */
+    padding-left: 10px; /* 왼쪽 패딩을 추가하여 텍스트와 테두리 사이에 여백 생성 */
+    margin-left: 0; /* 필요에 따라 왼쪽 마진 조정 */
+    font-style: normal; /* 인용 텍스트의 기울임꼴 스타일 제거, 필요에 따라 조정 */
+}
+
+.md-typeset i {
+    font-weight: bold; /* 기울임꼴을 굵은 글씨로 표시 */
+    font-style: normal; /* 기본적으로 적용되는 기울임꼴 스타일 제거 */
+}
+
+hr {
+    border: 0; /* 기존의 border를 제거합니다 */
+    height: 1px; /* 가로줄의 두께를 지정합니다 */
+    background-color: #B1B1B1; /* 가로줄의 색상을 명확한 그레이로 설정합니다 */
+}
