@@ -19,9 +19,9 @@ nav:
       - 5-1 LoRA : "4.texture/LoRA.md"
       - 5-2 How to LoRA: "4.texture/HowtouseLoRA.md"    
       - 5-3 How to train LoRA : "4.texture/train LoRA.md"  
-      - 5-3 조경 디자인: "4.texture/texture.md"
-      - 5-4 평,입,단면 도면: "4.texture/texture.md"
-      - 5-5 인테리어 디자인:  "4.texture/texture.md"
+      - 5-3 조경 디자인: "4.texture/LoRA_K조경.md"
+      - 5-4 평,입,단면 도면: "4.texture/LoRA_평입단.md"
+      - 5-5 인테리어 디자인:  "4.texture/LoRA_int.md"
   - 6.주변 환경 적용(Control-net) : 
       - 6-1 Control_net : "5.Control_net/Control_net_basics.md"
       - 6-2 Control_net_models : "5.Control_net/Control_net_models.md"
